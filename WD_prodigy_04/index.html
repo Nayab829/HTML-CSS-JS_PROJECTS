@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+      integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body style="background-color: black">
+    <!-- header======= -->
+    <div class="img"></div>
+    <header>
+    
+    <nav>
+        <a href="#home">
+          <h1 class="logo">
+            Nayab <span><i class="ri-code-s-slash-line"></i></span>
+          </h1>
+        </a>
+        <i class="ri-menu-fill menu-icon" onclick="openMenu()"></i>
+
+        <ul class="nav-links">
+          
+          <li><i class="ri-close-fill" onclick="closeMenu()"></i></li>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li>
+            <a href="N1..pdf" download="" class="btn"
+              ><i class="ri-download-fill"></i> Download CV
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="row" id="home">
+        <div class="left">
+          <h2 class="hero-title">
+            <strong>Hello, I'm</strong><br />
+            <span>Nayab</span><br />
+            Frontend Web Developer From Pakistan
+          </h2>
+          <p class="hero-text">
+            Crafting Digital Experiences: Frontend Wizardry in HTML, CSS, and
+            JavaScript
+          </p>
+          <div class="btns">
+            <a href="#contact" class="btn">Hire Me</a>
+          </div>
+        </div>
+        <div class="right">
+          <img src="images/bg.png" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <!-- about======= -->
+    <section class="about" id="about">
+      <div class="left">
+        <img src="images/about.jpg" alt="" />
+      </div>
+      <div class="right">
+        <h2 class="title">About Me</h2>
+        <p>
+          I'm a passionate web developer dedicated to creating beautiful and
+          functional websites.
+        </p>
+        <p>
+          My goal is to provide clients with solutions that meet their needs
+          while ensuring a seamless user experience. I am constantly learning
+          and staying updated with the latest trends and technologies in web
+          development.
+        </p>
+        <div class="tab-title-box">
+          <div class="tab-title active-link" onclick="openTab(event,'skill')">
+            Skills
+          </div>
+          <div class="tab-title" onclick="openTab(event,'education')">
+            Education
+          </div>
+          <div class="tab-title" onclick="openTab(event,'experience')">
+            Experience
+          </div>
+        </div>
+        <div class="tab-contents active-tab" id="skill">
+          <ul>
+            <li>
+              <h5>Frontend Development</h5>
+              Designing Web Interfaces
+            </li>
+            <li>
+              <h5>Responsive Websites</h5>
+              websites Compatible for all screen types
+            </li>
+            <li>
+              <h5>Debugging</h5>
+              Fix bugs in html ,css and js.
+            </li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li>
+              <h5>2018-2020</h5>
+              Matric Completed
+            </li>
+            <li>
+              <h5>2021-2022</h5>
+              F.sc Completed
+            </li>
+            <li>
+              <h5>2023-2027</h5>
+              Currently pursuing Computer engineering from Virtual University of
+              pakistan
+            </li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li>
+              <h5>2022-2024</h5>
+              Developed responsive and user-friendly websites using HTML, CSS,
+              and JavaScript. Improved website performance and SEO for better
+              search engine rankings. Collaborated closely with clients to
+              deliver tailored web solutions. Designed intuitive user interfaces
+              to enhance user experience. Maintained version control using Git
+              and GitHub.
+            </li>
+          </ul>
+        </div>
+
+        <!-- <a href="#contact" class="btn">Contact me</a> -->
+      </div>
+    </section>
+
+    <!-- portfolio====== -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="title">Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <div class="project-details">
+            <h2>Modern Responsive Landing Page</h2>
+            <p>
+              A fully responsive landing page designed for optimal viewing on
+              all devices, featuring smooth navigation and a modern design.
+            </p>
+            <div>
+              <a
+                href="https://nayab829.github.io/WD_prodigy_01/ "
+                target="_blank"
+                class="btn m-r-10"
+                >Live Demo</a
+              >
+              <a href="https://github.com/Nayab829/WD_prodigy_01
+              " class="btn">View Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-details">
+            <h2>Digital Stopwatch Application</h2>
+            <p>
+              A precise and user-friendly digital stopwatch with start, stop,
+              and reset functionalities.
+            </p>
+            <div>
+              <a
+                href="https://nayab829.github.io/WD_prodigy_02"
+                target="_blank"
+                class="btn m-r-10"
+                >Live Demo</a
+              >
+              <a href="https://github.com/Nayab829/WD_prodigy_02" class="btn">View Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-details">
+            <h2>Interactive Tic Tac Toe Game</h2>
+            <p>
+              A classic Tic Tac Toe game with an engaging interface for two
+              players, suitable for both desktop and mobile.
+            </p>
+            <div>
+              <a
+                href="
+            https://nayab829.github.io/WD_prodigy_03"
+                target="_blank"
+                class="btn m-r-10"
+                >Live Demo</a
+              >
+              <a href="
+              https://github.com/Nayab829/WD_prodigy_03
+              " class="btn">View Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-details">
+            <h2>Real-Time Weather App</h2>
+            <p>
+              Provides up-to-date weather information with a sleek and
+              user-friendly interface, featuring current conditions, forecasts,
+              and location-based weather updates.
+            </p>
+            <div>
+              <a href=" https://nayab829.github.io/WD_prodigy_-4" class="btn m-r-10">Live Demo</a>
+              <a href="
+              https://github.com/Nayab829/WD_prodigy_05
+              " class="btn">View Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-details">
+            <h2>Random Color Palette Generator</h2>
+            <p>
+              Generates unique color palettes with a copy-to-clipboard feature
+              for easy use in design projects.
+            </p>
+            <div>
+              <a href=" https://nayab829.github.io/random-palette-generator/" class="btn m-r-10">Live Demo</a>
+              <a href="#" class="btn">View Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-details">
+            <h2>Dynamic Background Changer</h2>
+            <p>
+              Allows users to change webpage background colors easily, providing
+              a fun and customizable experience.
+            </p>
+            <div>
+              <a href=" https://nayab829.github.io/bgchanger/" class="btn m-r-10">Live Demo</a>
+              <a href="#" class="btn">View Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skills======= -->
+    <section class="skills" id="skills">
+      <h2 class="title">Skills</h2>
+      <div class="skill-container">
+        <div class="skill html">
+          <div class="skill-title">
+            <h3>HTML5</h3>
+            <h3>90%</h3>
+          </div>
+          <div class="progressbar">
+            <div class="progress"></div>
+          </div>
+        </div>
+        <div class="skill css">
+          <div class="skill-title">
+            <h3>CSS3</h3>
+            <h3>80%</h3>
+          </div>
+          <div class="progressbar">
+            <div class="progress"></div>
+          </div>
+        </div>
+        <div class="skill js">
+          <div class="skill-title">
+            <h3>Javascript</h3>
+            <h3>75%</h3>
+          </div>
+          <div class="progressbar">
+            <div class="progress"></div>
+          </div>
+        </div>
+        <div class="skill git">
+          <div class="skill-title">
+            <h3>Git & Github</h3>
+            <h3>65%</h3>
+          </div>
+          <div class="progressbar">
+            <div class="progress"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact======= -->
+    <section class="contact" id="contact">
+      <h2 class="title">Contact Me</h2>
+      <div class="contact-box">
+        <div class="contact-details">
+          <h2>Get in <span>Touch</span></h2>
+          <p>
+            I'm always open to discussing new projects, creative ideas, or
+            opportunities to be part of your visions. Feel free to reach out
+            through any of the following methods:
+          </p>
+          <div class="social-links">
+            <div class="name">
+              <i class="ri-contacts-line"></i>
+              <p><strong>Name</strong> Nayab</p>
+            </div>
+
+            <div class="email">
+              <i class="ri-mail-line"></i>
+              <p><strong>Email</strong>nayabg829@gmail.com</p>
+            </div>
+            <div class="email">
+              <i class="ri-map-pin-line"></i>
+              <p><strong>Address</strong>Peshawar, Pakistan</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" />
+          </div>
+          <div class="form-group">
+            <label for="name">Email</label>
+            <input type="email" />
+          </div>
+          <div class="form-group">
+            <label for="name">Message</label>
+            <textarea name="message" id="message"></textarea>
+            <a href="#" class="btn">Send Message</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer======= -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-links">
+          <a href="https://twitter.com" target="_blank" class="social-link"
+            ><i class="ri-twitter-x-line"></i
+          ></a>
+          <a href="https://linkedin.com" target="_blank" class="social-link"
+            ><i class="ri-linkedin-box-fill"></i
+          ></a>
+          <a href="https://github.com" target="_blank" class="social-link"
+            ><i class="ri-github-fill"></i
+          ></a>
+          <a href="https://instagram.com" target="_blank" class="social-link"
+            ><i class="ri-instagram-fill"></i
+          ></a>
+        </div>
+        <p class="footer-text">
+          Created by <span>Nayab </span> | &copy; 2024 All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

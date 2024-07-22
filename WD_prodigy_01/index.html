@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navigation Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- navbar----- -->
+  <nav id="navbar">
+    <div class="logo">
+     <a href="#home"> <h1>Foodie</h1></a>
+    </div>
+    <ul>
+        <i class="fa-solid fa-xmark hide-icon" onclick="hideMenu()"></i>
+      <li><a href="#home" onclick="hideMenu()">Home</a></li>
+      <li><a href="#about" onclick="hideMenu()">About Us</a></li>
+      <li><a href="#menu" onclick="hideMenu()">Menu</a></li>
+      <li><a href="#blog" onclick="hideMenu()">Blog</a></li>
+      <li><a href="#contact" onclick="hideMenu()">Contact Us</a></li>
+    </ul>
+   <a href="#menucateogory"> <button class="btn">Get Menu</button></a>
+   <i class="fa-solid fa-bars show-icon" onclick="showMenu()"></i>
+  </nav>
+  <!-- navbar ends here -->
+  <section class="hero" id="home">
+    <div class="content">
+      <h1 class="main-heading">
+        Healthy inside <br>Fresh Food Outside
+      </h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, doloremque? <br>Dicta, esse fugit commodi
+        laudantium voluptas corporis sapiente dolores? Fugit.</p>
+      <a href="#blog" class="learn-more btn">Learn More</a>
+      <a href="#contact" class="cta btn">Contact Us</a>
+    </div>
+  </section>
+  <!-- hero-section ends here -->
+  <section class="our-working" id="services">
+    <div class="container">
+      <h1>How It <span>Work</span></h1>
+      <div class="step-container">
+        <div class="step1 box">
+          <i class="fa-solid fa-bowl-food"></i>
+          <h2>Choose Your Favourite</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, aut!</p>
+        </div>
+        <div class="step2 box">
+          <i class="fa-solid fa-truck"></i>
+          <h2>We Deliver Your Meal</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, aut!</p>
+        </div>
+        <div class="step3 box">
+          <i class="fa-solid fa-burger"></i>
+          <h2>Eat and Enjoy</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, aut!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="exclusive" id="contact">
+    <div class="container exclusive-box">
+      <div class="img">
+       
+      </div>
+      <div class="exclusive-text">
+        <h2 class="first">Healthy Food Comes From <br><span>Healthy Ingredients</span></h2>
+
+        <p class="exclusive-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+          necessitatibus, incidunt in eaque reiciendis veritatis? Similique et voluptas dolorum asperiores! Lorem ipsum
+          dolor sit amet consectetur, adipisicing elit. Est, harum!</p>
+        <h4 class="time"><i class="fa-regular fa-clock"></i>Every Mon to Sat 8:00 to 12:00</h4>
+        <h4 class="phone"><i class="fa-solid fa-phone"></i>(800) 123-6789</h4>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </div>
+  </section>
+  <section class="menu" id="menu">
+    <div class="container menu-main-container">
+      <h2 class="menu-header">Our Featured <span>Menu</span></h2>
+      <div class="menu-container">
+        <div class="col-4">
+          <div class="img-box"><img src="images/food_1.png" alt=""></div>
+          <h4>Grilled Roast Vegetables</h4>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="col-4">
+          <div class="img-box"><img src="images/food_2.png" alt=""></div>
+          <h4>Grilled Roast Vegetables</h4>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="col-4">
+          <div class="img-box"><img src="images/food_3.png" alt=""></div>
+          <h4>Grilled Roast Vegetables</h4>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="col-4">
+          <div class="img-box"><img src="images/food_4.png" alt=""></div>
+          <h4>Grilled Roast Vegetables</h4>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="preparation">
+    <h1>See How We Prepare <br> Your Meal</h1>
+  </section>
+  <section class="menu-categories" id="menucateogory">
+    <div class="container">
+      <h2 class="menu-header">Our Menu <span>Categories</span></h2>
+      <div class="row">
+        <div class="col-4">
+          <h4>Vegetarian</h4>
+        </div>
+
+        <div class="col-4">
+          <h4>Dinner</h4>
+        </div>
+
+        <div class="col-4">
+          <h4>Dessert</h4>
+        </div>
+        <div class="col-4">
+          <h4>Salad</h4>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <h4>Lunch</h4>
+        </div>
+
+        <div class="col-4">
+          <h4>Breafast</h4>
+        </div>
+
+        <div class="col-4">
+          <h4>Fish & Meat</h4>
+
+
+        </div>
+        <div class="col-4">
+          <h4>Soup</h4>
+
+
+        </div>
+
+      </div>
+  </section>
+<section class="blog" id="blog">
+  <h1 class="title">Our Latest News & <span>Blogs</span></h1>
+  <div class="container blog-container">
+  <div class="blog-cards">
+    <div class="img one">
+      <div class="date">29 August</div>
+    </div>
+    <div class="blog-content">
+      <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, libero Lorem, ipsum dolor.</p>
+    </div>
+  </div>
+  <div class="blog-cards">
+    <div class="img two">
+      <div class="date">29 August</div>
+    </div>
+    <div class="blog-content">
+      <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, libero Lorem, ipsum dolor.</p>
+    </div>
+  </div>
+  <div class="blog-cards">
+    <div class="img three">
+      <div class="date">29 August</div>
+    </div>
+    <div class="blog-content">
+      <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, libero Lorem, ipsum dolor.</p>
+    </div>
+  </div>
+ 
+  </div>
+</section>
+<footer id="about">
+  <div class="footer-header">
+   <div class="subsc"> <h1>Subscribe Our <span>Newsletter</span></h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p></div>
+    <div class="search-box">
+      <input type="text" placeholder="Your Address here">
+      <button><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+  </div>
+  <div class="footer-main-container">
+    <div class="footer-content">
+      <h2>Logo</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt amet reprehenderit, quidem reiciendis consequuntur laudantium!</p>
+      <div class="links">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-pinterest-p"></i>
+      </div>
+    </div>
+    <div class="footer-content">
+      <h2>Quick Links</h2>
+      <ul>
+        <li>About us </li>
+        <li>Menu </li>
+        <li>Our team </li>
+        <li>Blog </li>
+        <li>Privcay </li>
+        <li>Support </li>
+        <li>Help </li>
+        <li>FAQs </li>
+      </ul>
+     
+    </div>
+    <div class="footer-content">
+      <h2>Official Info</h2>
+      <p><i class="fa-solid fa-location-dot"></i>234b sample ave, USA 123</p>
+      <p><i class="fa-solid fa-phone-volume"></i>(800) 123-6789</p>
+      <h6>Open Hours</h6>
+      Mon to Sat 8:00am to 12:00 pm <br>Sunday closed
+     
+    </div>
+  </div>
+  <hr>
+  <p class="copyright">© 2024 Your company All rights reserved</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
